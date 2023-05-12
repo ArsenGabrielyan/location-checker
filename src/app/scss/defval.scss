@@ -1,0 +1,6 @@
+$defaultColor: #0094ff !default;
+$defaultDark: #002a4f !default;
+@mixin flex-align($j,$a){
+     justify-content: $j;
+     align-items: $a;
+}

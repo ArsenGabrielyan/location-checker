@@ -1,0 +1,37 @@
+@import "./scss/defval.scss";
+.app{
+     display: flex;
+     @include flex-align(center,center);
+     flex-direction: column;
+     min-height: 100vh;
+     background: $defaultColor;
+     .map{
+          width: 100%;
+          height: 100vh;
+          position: relative;
+     }
+     .details{
+          position: fixed;
+          top: 0;
+          left: 0;
+          background: #fafafa;
+          width: 100%;
+          padding: 20px 30px;
+          text-align: center;
+          h1{font-size: 35px;}
+          p{
+               font-size: 20px;
+               color: grey;
+               font-style: italic;
+          }
+          ul{
+               width: 100%;
+               display: flex;
+               flex-direction: column;
+               @include flex-align(center,center);
+               list-style: none;
+               li{margin: 5px 0;}
+               .list-title{border-bottom: 1px solid grey;width: fit-content;}
+          }
+     }
+}
